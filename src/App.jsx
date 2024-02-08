@@ -64,20 +64,20 @@ useEffect(()=>{
   return (
     <TodoProvider 
     value={{todos,addTodo,updateTodo,deleteTodo,toggleComplete}}>
-    <div className="bg-[#172842] min-h-screen py-8">
-                <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-                    <h1 className="text-2xl font-bold text-center mb-8 mt-2">Manage Your Todos</h1>
-                    <div className="mb-4">
+    <div className="bg-[#60AB80] min-h-screen py-8   rounded-3xl">
+                <div className="w-full max-w-2xl mx-auto shadow-lg rounded-3xl px-4 py-6 text-black bg-[#E4CB57]">
+                    <h1 className="text-4xl text-black font-bold text-center p-2 mb-8 mt-2"> Your To-Do List </h1>
+                    <div className="mb-4 p-1 bg-white text-xl  rounded-lg">
                         {/* Todo form goes here */} 
                         <TodoForm/>
                     </div>
-                    <div className="flex flex-wrap gap-y-3">
+                    <div className="flex flex-wrap gap-y-3 rounded-3xl">
                         {/*Loop and Add TodoItem here , we must use keys in the div while creating the children  */}
 
                       {
                         todos.map((todoItem)=> (
                          <div key={todoItem.id} 
-                         className='w-full'>
+                         className='w-full text-xl'>
                            <TodoItem anyTodo={todoItem}/>
                           </div>
                         ))
