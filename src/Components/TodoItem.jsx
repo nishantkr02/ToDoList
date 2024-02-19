@@ -34,7 +34,7 @@ const toggleHandler = () =>{
 
 return (
 <div
-    className={`flex border border-black/10 rounded-lg  gap-x-3 shadow-sm shadow-white/50 duration-300  text-black text-2xl  ${
+    className={`flex border border-black/10 rounded-lg  gap-x-3 shadow-2xl shadow-white/50 duration-300  text-black text-2xl p-1 ${
         anyTodo.completed ? "bg-[#82E17F]" : "bg-[#EF6969]"
     }`}
 >
@@ -46,7 +46,7 @@ return (
     />
     <input
         type="text"
-        className={`border outline-none w-full bg-transparent rounded-lg ${
+        className={`border  outline-none w-full bg-transparent rounded-lg ${
             isTodoEditable ? "border-black/10 px-2" : "border-transparent"
         } ${anyTodo.completed ? "line-through" : ""}`}
         value={todoMessage}
