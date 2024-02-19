@@ -64,10 +64,10 @@ useEffect(()=>{
   return (
     <TodoProvider 
     value={{todos,addTodo,updateTodo,deleteTodo,toggleComplete}}>
-    <div className=" mt-4 width bg-[#535490]  text-black border-4  rounded-3xl shadow-2xl border-pink-500 items-center min-h-screen py-8 px-2 ">
-                <div className=" mt-1 w-10/12 sm:w-full bg-[#E4CB57] rounded-3xl px-4 pb-8   ">
+    <div className=" mt-4 width bg-[#535490]  text-black border-4  rounded-3xl shadow-2xl border-gray-500 items-center min-h-screen py-8 px-2 ">
+                <div className=" mt-1 w-12/12 sm:w-full bg-[#E4CB57] rounded-3xl px-4 pb-8   ">
                     <h1 className="text-2xl text-black font-bold text-center p-2 mb-8 mt-2"> Your To-Do List </h1>
-                    <div className="mb-4 mx-auto  bg-white text-xl  rounded-lg">
+                    <div className="mb-4 mx-auto  bg-white md:text-xl lg:text-2xl sm:text-xl text-md rounded-lg">
                         {/* Todo form goes here */} 
                         <TodoForm/>
                     </div>

@@ -34,7 +34,7 @@ const toggleHandler = () =>{
 
 return (
 <div
-    className={`flex border border-black/10 rounded-lg  gap-x-3 shadow-2xl shadow-white/50 duration-300  text-black text-2xl p-1 ${
+    className={`flex border border-black/10 rounded-lg  gap-x-3 shadow-2xl shadow-white/50 duration-300  text-black md:text-xl lg:text-2xl sm:text-xl text-md p-1 ${
         anyTodo.completed ? "bg-[#82E17F]" : "bg-[#EF6969]"
     }`}
 >
